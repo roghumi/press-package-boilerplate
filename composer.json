@@ -1,0 +1,43 @@
+{
+  "name": "roghumi/press-packagename",
+  "description": "Package description",
+  "type": "library",
+  "license": "MIT",
+  "minimum-stability": "dev",
+  "autoload": {
+    "psr-4": {
+      "Roghumi\\Press\\PackageName\\": "src/"
+    }
+  },
+  "autoload-dev": {
+    "psr-4": {
+      "Roghumi\\Press\\PackageName\\Tests\\": "tests/"
+    }
+  },
+  "authors": [
+    {
+      "name": "roghumi",
+      "email": "larapress@roghumi.com",
+      "homepage": "https://press.roghumi.com"
+    }
+  ],
+  "extra": {
+    "laravel": {
+      "providers": [
+        "Roghumi\\Press\\PackageName\\Providers\\PackageNameServiceProvider"
+      ]
+    }
+  },
+  "require-dev": {
+    "orchestra/testbench": "^8.0",
+    "tightenco/duster": "dev-main",
+    "phpunit/phpunit": "10.1@dev",
+    "phpunit/php-code-coverage": "^10.1@dev"
+  },
+  "require": {
+    "illuminate/support": "*"
+  },
+  "config": {
+    "allow-plugins": {}
+  }
+}
