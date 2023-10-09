@@ -1,6 +1,6 @@
 {
-  "name": "roghumi/press-packagename",
-  "description": "Package description",
+  "name": "roghumi/press-boilerplate",
+  "description": "Package boilerplate for LaraPress",
   "type": "library",
   "license": "MIT",
   "minimum-stability": "dev",
@@ -24,7 +24,7 @@
   "extra": {
     "laravel": {
       "providers": [
-        "Roghumi\\Press\\PackageName\\Providers\\PackageNameServiceProvider"
+        "Roghumi\\Press\\PackageName\\Providers\\PackageServiceProvider"
       ]
     }
   },
