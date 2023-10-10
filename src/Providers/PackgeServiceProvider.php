@@ -9,12 +9,10 @@ class PackageServiceProvider extends ServiceProvider
 {
   use MigrationPublishTrait;
 
-  /** @phpcs:ignore Squiz.Commenting.FunctionComment */
   public function register()
   {
   }
 
-  /** @phpcs:ignore Squiz.Commenting.FunctionComment */
   public function boot()
   {
     $this->mergeConfigFrom(__DIR__ . '/../../config/press/packagename.php', 'press.packagename');
