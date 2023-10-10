@@ -4,6 +4,7 @@ services:
   ## PHP Cli Dev mode with xDebug, phpunit, phpcs
   ### LaraPress dev environement
   phpcli:
+    image: $CI_REGISTRY/roghumi/press/press-crud/phpcli:latest
     build:
       dockerfile: dev/Dockerfile.phpcli
       context: .
