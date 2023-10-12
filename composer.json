@@ -1,18 +1,18 @@
 {
-  "name": "roghumi/press-boilerplate",
-  "description": "Package boilerplate for LaraPress",
+  "name": "roghumi/press-larapresspackage",
+  "description": "boilerplate for LaraPress packages",
   "type": "library",
   "license": "MIT",
   "minimum-stability": "dev",
   "version": "0.1",
   "autoload": {
     "psr-4": {
-      "Roghumi\\Press\\PackageName\\": "src/"
+      "Roghumi\\Press\\LaraPressPackage\\": "src/"
     }
   },
   "autoload-dev": {
     "psr-4": {
-      "Roghumi\\Press\\PackageName\\Tests\\": "tests/"
+      "Roghumi\\Press\\LaraPressPackage\\Tests\\": "tests/"
     }
   },
   "authors": [
@@ -25,20 +25,25 @@
   "extra": {
     "laravel": {
       "providers": [
-        "Roghumi\\Press\\PackageName\\Providers\\PackageServiceProvider"
+        "Roghumi\\Press\\LaraPressPackage\\Providers\\PackageServiceProvider"
       ]
     }
   },
   "require-dev": {
     "orchestra/testbench": "^8.0",
     "tightenco/duster": "dev-main",
-    "phpunit/phpunit": "10.1@dev",
-    "phpunit/php-code-coverage": "^10.1@dev"
+    "symfony/console": "6.4.x-dev"
   },
   "require": {
-    "illuminate/support": "*"
+    "illuminate/support": "*",
+    "twig/twig": "^3.0"
   },
   "config": {
     "allow-plugins": {}
+  },
+  "scripts": {
+    "post-create-project-cmd": [
+      "@php dev/console larapress:post-package-install"
+    ]
   }
 }

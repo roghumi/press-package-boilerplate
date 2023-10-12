@@ -1,6 +1,6 @@
 <?php
 
-namespace Roghumi\Press\packagename\Providers;
+namespace Roghumi\Press\LaraPressPackage\Providers;
 
 use Illuminate\Support\ServiceProvider;
 use Roghumi\Press\Crud\Helpers\MigrationPublishTrait;
@@ -21,7 +21,7 @@ class PackageServiceProvider extends ServiceProvider
 
     if ($this->app->runningInConsole()) {
       $this->publishes([
-          __DIR__ . '/../../config/press/pacakgename.php' => config_path('press/pacakgename.php'),
+          __DIR__ . '/../../config/press/packagename.php' => config_path('press/packagename.php'),
       ], 'config');
 
       $this->publishMigrations(__DIR__ . '/../../database/migrations');
