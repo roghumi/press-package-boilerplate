@@ -35,8 +35,7 @@
     "symfony/console": "6.4.x-dev"
   },
   "require": {
-    "illuminate/support": "*",
-    "twig/twig": "^3.0"
+    "illuminate/support": "*"
   },
   "config": {
     "allow-plugins": {}

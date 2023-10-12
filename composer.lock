@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "d4ba30c240ee85716a02f0439369942b",
+    "content-hash": "9b9a082f5d3b1d72cda31eecf062fe07",
     "packages": [
         {
             "name": "brick/math",
@@ -4507,78 +4507,6 @@
             "time": "2023-01-03T09:29:04+00:00"
         },
         {
-            "name": "twig/twig",
-            "version": "3.x-dev",
-            "source": {
-                "type": "git",
-                "url": "https://github.com/twigphp/Twig.git",
-                "reference": "e5d989fcfa9b11262dad32652b80a9ee0089adf6"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://api.github.com/repos/twigphp/Twig/zipball/e5d989fcfa9b11262dad32652b80a9ee0089adf6",
-                "reference": "e5d989fcfa9b11262dad32652b80a9ee0089adf6",
-                "shasum": ""
-            },
-            "require": {
-                "php": ">=7.2.5",
-                "symfony/polyfill-ctype": "^1.8",
-                "symfony/polyfill-mbstring": "^1.3"
-            },
-            "require-dev": {
-                "psr/container": "^1.0|^2.0",
-                "symfony/phpunit-bridge": "^5.4.9|^6.3|^7.0"
-            },
-            "default-branch": true,
-            "type": "library",
-            "autoload": {
-                "psr-4": {
-                    "Twig\\": "src/"
-                }
-            },
-            "notification-url": "https://packagist.org/downloads/",
-            "license": [
-                "BSD-3-Clause"
-            ],
-            "authors": [
-                {
-                    "name": "Fabien Potencier",
-                    "email": "fabien@symfony.com",
-                    "homepage": "http://fabien.potencier.org",
-                    "role": "Lead Developer"
-                },
-                {
-                    "name": "Twig Team",
-                    "role": "Contributors"
-                },
-                {
-                    "name": "Armin Ronacher",
-                    "email": "armin.ronacher@active-4.com",
-                    "role": "Project Founder"
-                }
-            ],
-            "description": "Twig, the flexible, fast, and secure template language for PHP",
-            "homepage": "https://twig.symfony.com",
-            "keywords": [
-                "templating"
-            ],
-            "support": {
-                "issues": "https://github.com/twigphp/Twig/issues",
-                "source": "https://github.com/twigphp/Twig/tree/3.x"
-            },
-            "funding": [
-                {
-                    "url": "https://github.com/fabpot",
-                    "type": "github"
-                },
-                {
-                    "url": "https://tidelift.com/funding/github/packagist/twig/twig",
-                    "type": "tidelift"
-                }
-            ],
-            "time": "2023-10-09T07:05:06+00:00"
-        },
-        {
             "name": "vlucas/phpdotenv",
             "version": "dev-master",
             "source": {
@@ -7887,7 +7815,8 @@
     "aliases": [],
     "minimum-stability": "dev",
     "stability-flags": {
-        "tightenco/duster": 20
+        "tightenco/duster": 20,
+        "symfony/console": 20
     },
     "prefer-stable": false,
     "prefer-lowest": false,

@@ -8,6 +8,8 @@ use Symfony\Component\Console\Input\InputArgument;
 use Symfony\Component\Console\Input\InputInterface;
 use Symfony\Component\Console\Output\OutputInterface;
 use Illuminate\Support\Str;
+use Symfony\Component\Console\Helper\QuestionHelper;
+use Symfony\Component\Console\Question\Question;
 
 class InstallScripts extends CommandCommand
 {
@@ -17,20 +19,18 @@ class InstallScripts extends CommandCommand
     public function configure()
     {
         $this->setName('larapress:post-package-install');
-        $this
-            // ...
-            ->addArgument(
-                'package',
-                InputArgument::REQUIRED,
-                'Package name'
-            );
     }
 
     protected function execute(InputInterface $input, OutputInterface $output): int
     {
         $output->writeln("Welcome to LaraPress package maker.");
+        $output->writeln("This tool will prepare an environment for developing LaraPress packages.");
         // ...
-        $packageName = $input->getArgument('package');
+
+        /** @var QuestionHelper */
+        $helper = $this->getHelper('question');
+        $question1 = new Question('Provide a package name: ', 'Sample');
+        $packageName = $helper->ask($input, $output, $question1);
 
         $projectBase = __DIR__ . '/../../';
         $placeholderValues = [
