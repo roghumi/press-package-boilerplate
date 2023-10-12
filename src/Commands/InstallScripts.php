@@ -43,6 +43,10 @@ class InstallScripts extends CommandCommand
             $projectBase.'src/Providers/PackageServiceProvider.php',
             $placeholderValues,
         );
+        $this->replacePlaceholderNameInFile(
+            $projectBase.'composer.json',
+            $placeholderValues,
+        );
         unlink($projectBase.'src/Commands/InstallScripts.php');
 
         return Command::SUCCESS;

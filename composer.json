@@ -1,10 +1,10 @@
 {
-  "name": "roghumi/press-larapresspackage",
+  "name": "roghumi/press-package-boilerplate",
   "description": "boilerplate for LaraPress packages",
   "type": "library",
   "license": "MIT",
   "minimum-stability": "dev",
-  "version": "0.1",
+  "version": "0.1.1",
   "autoload": {
     "psr-4": {
       "Roghumi\\Press\\LaraPressPackage\\": "src/"
